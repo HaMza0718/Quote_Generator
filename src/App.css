@@ -2,15 +2,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
 }
-
+.top_head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 2rem;
+}
 .main{
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
   justify-content: center;
-  height: 100vh;
+  height: 80vh;
+  margin: auto;
 }
 .card {
   width: 300px;
@@ -40,7 +48,7 @@
   background: radial-gradient(#b0e633, #53ef7d);
   border-radius: 50%;
   position: absolute;
-  animation: move-up6 2s ease-in infinite alternate-reverse;
+  animation: move-up6 1s ease-in infinite alternate-reverse;
 }
 
 .circle:nth-child(1) {
@@ -68,7 +76,7 @@
 
 .button {
   padding: 15px 20px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   background: transparent;
   border: none;
@@ -76,6 +84,7 @@
   color: #000;
   z-index: 1;
   margin: 1.5rem;
+  cursor: pointer;
 }
 
 .button::after,
@@ -121,4 +130,26 @@
 .button:active::after {
   transition: 0s;
   transform: translate(0, 5%);
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  body{
+    overflow: hidden;
+  }
+  .top_head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    width: 50%;
+  }
+  .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: auto;
+    margin: auto;
+  }
 }

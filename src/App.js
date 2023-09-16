@@ -23,14 +23,17 @@ class App extends React.Component {
 
   render() {
     return (
+      <>
       <div className="main">
+      <h1 className="top_head">'Random Quote Generator'</h1>
         <div className="card">
           <div className="circle"></div>
           <div className="circle"></div>
-          <div className="card-inner"><h1 classNameName="heading">{this.state.advice}</h1></div>
+          <div className="card-inner"><h1 classNameName="heading">"{this.state.advice}"</h1></div>
         </div>
           <button className="button" onClick={this.fetchAdvice}>Give Me Advice</button>
       </div>
+      </>
     );
   }
 }
