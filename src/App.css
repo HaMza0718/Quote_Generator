@@ -141,14 +141,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 26px;
     width: 50%;
   }
   .main{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 75vh;
     width: auto;
     margin: auto;
   }
